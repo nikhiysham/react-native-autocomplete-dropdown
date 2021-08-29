@@ -23,6 +23,7 @@ export const RightButton = memo(
     buttonsContainerStyle,
     ChevronIconComponent,
     ClearIconComponent,
+    showChevronAnimation
   }) => {
     const isOpenedAnimationValue = useRef(new Animated.Value(0)).current
 
@@ -57,7 +58,7 @@ export const RightButton = memo(
         )}
         {loading && <ActivityIndicator color="#999" />}
         {showChevron && (
-          <Animated.View style={{ transform: [{ rotate: chevronSpin }] }}>
+          <Animated.View style={showChevronAnimation ? { transform: [{ rotate: chevronSpin }] } : {}}>
             <TouchableOpacity
               onPress={onChevronPress}
               style={styles.chevronButton}
