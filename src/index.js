@@ -409,7 +409,7 @@ AutocompleteDropdown.propTypes = {
   ChevronIconComponent: PropTypes.element,
   ClearIconComponent: PropTypes.element,
   ScrollViewComponent: PropTypes.elementType,
-  showChevronAnimation: PropTupes.bool
+  showChevronAnimation: PropTypes.bool
 }
 
 const styles = ScaledSheet.create({
