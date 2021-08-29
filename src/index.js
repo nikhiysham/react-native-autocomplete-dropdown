@@ -348,6 +348,7 @@ export const AutocompleteDropdown = memo(
             buttonsContainerStyle={props.rightButtonsContainerStyle}
             ChevronIconComponent={props.ChevronIconComponent}
             ClearIconComponent={props.ClearIconComponent}
+            showChevronAnimation={props.showChevronAnimation ?? false}
           ></RightButton>
         </View>
 
@@ -408,6 +409,7 @@ AutocompleteDropdown.propTypes = {
   ChevronIconComponent: PropTypes.element,
   ClearIconComponent: PropTypes.element,
   ScrollViewComponent: PropTypes.elementType,
+  showChevronAnimation: PropTupes.bool
 }
 
 const styles = ScaledSheet.create({
